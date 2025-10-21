@@ -1,14 +1,40 @@
 <div class="bg">
   <img src="cityscapes.jpg" alt="" class="background">
   <h1 class="logo">Yewon Yun</h1>
+  <p class="pw">a portfolio website.</p>
 </div>
+
+<div class="menu-container">
+  <button class="menu">About</button>
+  <button class="menu">Music</button>
+  <button class="menu">Photography</button>
+  <button class="menu">Art</button>
+  <button class="menu">Coding</button>
+</div>
+
+<section class="about-me">
+  <div class="about-image">
+    <img src="imge.jpg" alt="">
+  </div>
+
+  <div class="about-text">
+    <h2>About Me</h2>
+    <p>
+      Learn more about the identity and background.
+    </p>
+    <div class="about-buttons">
+      <button>About</button>
+      <button>Life</button>
+    </div>
+  </div>
+</section>
 
 
 <style>
 html, body { height: 100%; margin: 0; }
 .bg {
   position: relative;
-  height: 100vh;
+  height: 94vh;
   width: 100%;
   overflow: hidden;
 }
@@ -31,6 +57,96 @@ html, body { height: 100%; margin: 0; }
   color: white;
   font-size: 4rem;
   font-family: 'Playfair Display', serif;
+}
+
+.pw {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.menu-container {
+  display: flex;
+  width: 100%;
+}
+
+.menu{
+    flex: 1;
+    margin: 0;
+    height: 6vh;
+    border: none;
+    font-size: 1rem;
+    background-color: #a0c9d0;
+    color: #4a2f28;
+    font-family: 'Playfair Display', serif;
+    transition: all 1s;
+}
+
+.menu:hover{
+    cursor: pointer;
+    background-color: #fbfeff;
+
+}
+
+.about-me {
+  display: flex;
+  align-items: center;
+  height: 80vh;
+  background-color: #fdf8f4;
+  color: #6e4b43;
+  font-family: 'Playfair Display', serif;
+}
+
+.about-image {
+  flex: 0 0 36%;
+  height: 80vh;
+  overflow: hidden;
+  
+}
+
+.about-image img{
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;   
+  object-position: 90% 20%;
+}
+
+.about-text {
+  flex: 1;
+  padding: 4rem;
+}
+.about-text h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.about-text p {
+  max-width: 450px;
+  line-height: 1.6;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.about-text .buttons {
+  display: flex;
+  gap: 1rem;
+}
+.about-text button {
+  background: #e6b6a6;
+  border: 1px solid #a8827a;
+  border-radius: 5px;
+  color: #4a2f28;
+  padding: 0.8rem 1.6rem;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.about-text button:hover {
+  background: #d9a898;
 }
 
 </style>

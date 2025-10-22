@@ -37,12 +37,12 @@
   </aside>
 
   <section class="gallery">
-    <button class="gal"><img src="city.jpg" alt=""></button>
-    <button class="gal"><img src="city.jpg" alt=""></button>
-    <button class="gal"><img src="city.jpg" alt=""></button>
-    <button class="gal"><img src="city.jpg" alt=""></button>
-    <button class="gal"><img src="city.jpg" alt=""></button>
-    <button class="gal"><img src="city.jpg" alt=""></button>
+    <button class="gal"><img src = "sc1.png" alt = ""></button>
+    <button class="gal"><img src = "lh.png" alt = ""></button>
+    <button class="gal"><img src = "window.jpg" alt = ""></button>
+    <button class="gal"><img src = "ocean.jpg" alt = ""></button>
+    <button class="gal"><img src = "camera.jpg" alt = ""></button>
+    <button class="gal"><img src = "city.jpg" alt = ""></button>
   </section>
 </main>
 
@@ -171,48 +171,78 @@ html, body { height: 100%; margin: 0; }
 * { box-sizing: border-box; }
 button { font: inherit; }
 
-* { box-sizing: border-box; }
-html, body { margin: 0; height: 100%; font-family: system-ui, sans-serif; }
-
-/* left-right layout */
 .layout {
   display: grid;
-  grid-template-columns: 280px 1fr; /* sidebar | content */
+  grid-template-columns: 280px 1fr;
   min-height: 100vh;
 }
 
-/* sidebar */
 .sidebar {
-  background: #9b7b5c; color: #fff;
-  padding: 40px 24px;
+  background: #7da2bb; color: #fff;
+  padding: 250px 24px;
+
   display: flex; flex-direction: column; gap: 1rem;
+  
 }
-.sidebar h1 { margin: 0 0 .5rem; font-size: 1.8rem; }
-.sidebar p  { margin: 0 0 .75rem; opacity: .95; }
-.browse { background:#fff; color:#9b7b5c; border:0; border-radius:6px; padding:12px 18px; font-weight:700; }
+.sidebar h1 { 
+  margin: 0 0 .5rem; font-size: 1.8rem; 
+}
+.sidebar p { 
+  margin: 0 0 .75rem; opacity: .95; 
+}
+.browse { 
+  font-family: 'Playfair Display', serif;
+  background:#fff; 
+  color:#7da2bb; 
+  border: solid 1px;
+  border-color: #7da2bb;
+  border-radius:6px; 
+  padding:12px 18px; 
+  font-weight:700; 
+  transition: 0.2s;
+}
 
+.browse:hover {
+  background:#7da2bb; 
+  color:#fff; 
+  border-color: #fff;
+}
 
-.tiles {
+.gallery {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr)); /* 3 columns */
-  gap: 16px;
-  padding: 24px;
-  background: #f6f4f1;
+  background-color: rgb(10, 66, 69);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  border: none;
+  padding: 0;
+  margin: 0;
 }
 
-.gal {
-  position: relative;
-  border: 0; 
-  padding: 0; 
-  border-radius: 8px; 
-  overflow: hidden;
-  aspect-ratio: 1 / 1; 
+.gal{
   cursor: pointer;
-  box-shadow: 0 6px 18px rgba(0,0,0,.08);
-  transition: transform .2s, box-shadow .2s;
+  overflow: hidden;
+  border: none;
+  padding: 0;
+  gap: 0;
+  margin: 0;
+  transition: all 0.3s;
+  aspect-ratio: 386/406;
 }
-.gal:hover { transform: translateY(-2px); box-shadow: 0 12px 26px rgba(0,0,0,.16); }
-.gal img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+.gal img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  position: relative; 
+}
+
+.gal:hover{
+  opacity: 70%;
+}
+
+
+
 
 
 </style>

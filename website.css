@@ -248,3 +248,50 @@ button { font: inherit; }
 .spinny img:active{
   transform : scale(1.13);
 }
+
+.coding {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #cb7663, #d7c8be);
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.projects {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.projects_text {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+
+.about-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+/* Square image buttons */
+.about-buttons button {
+  width: 120px;
+  height: 120px;
+  border: none;
+  border-radius: 3px;
+  background-color: white;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.about-buttons button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}

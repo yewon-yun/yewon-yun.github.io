@@ -75,6 +75,8 @@ html { scroll-behavior: smooth; }
 
 }
 
+/* -------------------------------------------------------ABOUT------------------------------------------------------ */
+
 .about-me {
   display: flex;
   align-items: center;
@@ -134,6 +136,10 @@ html { scroll-behavior: smooth; }
 .about-text button:hover {
   background: #d9a898;
 }
+
+
+/* -------------------------------------------------------PHOTOGRAPHY------------------------------------------------------ */
+
 * { box-sizing: border-box; }
 button { font: inherit; }
 
@@ -229,6 +235,9 @@ button { font: inherit; }
   opacity: 70%;
 }
 
+/* -------------------------------------------------------MUSIC------------------------------------------------------ */
+
+
 .playlist{
   background-color: #4a7470;
   min-height: 40rem;
@@ -284,6 +293,9 @@ button { font: inherit; }
   transform : scale(1.13);
 }
 
+/* -------------------------------------------------------ART------------------------------------------------------ */
+
+
 .art-hero {
   position: relative;
   height: 100vh;
@@ -306,7 +318,7 @@ button { font: inherit; }
   gap: 3rem;
 }
 
-/* LEFT SIDE — TEXT */
+
 .art-text {
   flex: 1;
   max-width: 500px;
@@ -359,6 +371,28 @@ button { font: inherit; }
     font-size: 3rem;
   }
 }
+
+.gallerybutton {
+  font-family: 'Playfair Display', serif;
+  background:#ffffff; 
+  color:#4a2f28; 
+  border: solid 1px;
+  border-color: #F1D8D8;
+  border-radius:6px; 
+  padding:12px 18px; 
+  font-weight:700; 
+  transition: 0.2s;
+}
+
+.gallerybutton:hover {
+  background:#F1D8D8; 
+  color:#fff; 
+  border-color: #fff;
+  cursor: pointer;
+
+}
+
+/* -------------------------------------------------------CODING------------------------------------------------------ */
 
 
 .coding {

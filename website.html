@@ -1,21 +1,22 @@
 <link rel="stylesheet" href="website.css">
 
-
 <div class="bg">
   <img src="cityscapes.jpg" alt="" class="background">
   <h1 class="logo">Yewon Yun</h1>
   <p class="pw">a portfolio website.</p>
 </div>
 
+<!-- 1) MENU that scrolls -->
 <div class="menu-container">
-  <button class="menu">About</button>
-  <button class="menu">Photography</button>
-  <button class="menu">Music</button>
-  <button class="menu">Art</button>
-  <button class="menu">Coding</button>
+  <a href="#about"><button class="menu">About</button></a>
+  <a href="#photography"><button class="menu">Photography</button></a>
+  <a href="#music"><button class="menu">Music</button></a>
+  <a href="#art"><button class="menu">Art</button></a>
+  <a href="#coding"><button class="menu">Coding</button></a>
 </div>
 
-<section class="about-me">
+<!-- ABOUT -->
+<section class="about-me" id="about">
   <div class="about-image">
     <img src="imge.jpg" alt="">
   </div>
@@ -26,40 +27,46 @@
       Learn more about the identity and background.
     </p>
     <div class="about-buttons">
-      <button>About</button>
-      <button>Life</button>
+      <a href=""><button>About</button></a>
+      <a href=""><button>Life</button></a>
     </div>
   </div>
 </section>
 
-<main class="layout">
+<!-- PHOTOGRAPHY -->
+<main class="layout" id="photography">
   <aside class="sidebar">
     <h1>Photography</h1>
     <p>Pictures taken with Canon EOS 70D, iPhone 14 Pro</p>
-    <button class="browse">Browse Gallery</button>
+    <a href=""><button class="browse">Browse Gallery</button></a>
   </aside>
 
   <section class="gallery">
-    <button class="gal"><img src = "sc1.png" alt = ""></button>
-    <button class="gal"><img src = "lh.png" alt = ""></button>
-    <button class="gal"><img src = "window.jpg" alt = ""></button>
-    <button class="gal"><img src = "ocean.jpg" alt = ""></button>
-    <button class="gal"><img src = "camera.jpg" alt = ""></button>
-    <button class="gal"><img src = "city.jpg" alt = ""></button>
+    <a href=""><button class="gal"><img src="sc1.png" alt=""></button></a>
+    <a href=""><button class="gal"><img src="lh.png" alt=""></button></a>
+    <a href=""><button class="gal"><img src="window.jpg" alt=""></button></a>
+    <a href=""><button class="gal"><img src="ocean.jpg" alt=""></button></a>
+    <a href=""><button class="gal"><img src="camera.jpg" alt=""></button></a>
+    <a href=""><button class="gal"><img src="city.jpg" alt=""></button></a>
   </section>
 </main>
 
-<section class="playlist">
+<!-- MUSIC -->
+<section class="playlist" id="music">
   <p class="play">
     If you like what you're hearing, check my compositions out:
   </p>
 
-  <button class="spinny">
+  <a href=""><button class="spinny">
     <img src="vinyly.png" alt="">
-  </button>
+  </button></a>
 </section>
 
-<section class="coding">
+<!-- ART (anchor target only; add your art content later) -->
+<section id="art"></section>
+
+<!-- 3) CODING — unchanged -->
+<section class="coding" id="coding">
   <h1 class="projects">coding</h1>
   <p class="projects_text">here is the projects i made through coding:</p>
 

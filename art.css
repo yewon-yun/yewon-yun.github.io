@@ -1,0 +1,105 @@
+/* Basic reset */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #fdf4fa;
+  color: #4a2f28;
+  padding: 2rem;
+}
+
+.gallery-title {
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Cormorant Garamond", serif;
+  margin-bottom: 2rem;
+}
+
+.backbutton {
+    font-family: "Cormorant Garamond", serif;
+    color:rgb(82, 128, 128);
+
+}
+
+/* Gallery grid */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.art-item {
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.art-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.art-item:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+.art-item:hover img {
+  transform: scale(1.05);
+}
+
+/* Modal popup */
+.modal {
+  display: none; /* hidden by default */
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-content {
+  background: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  border-radius: 12px;
+  max-width: 900px;
+  width: 90%;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+}
+
+.modal-content img {
+  width: 60%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: contain;
+}
+
+.modal-desc {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-desc p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: #4a2f28;
+  padding: 0 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .modal-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .modal-content img {
+    width: 100%;
+  }
+}

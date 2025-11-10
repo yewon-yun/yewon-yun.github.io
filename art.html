@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Art Gallery</title>
+  <link rel="stylesheet" href="art.css">
+</head>
+<body>
+
+<a href="website.html" class="backbutton">← Back</a>
+
+
+  <h1 class="gallery-title">Art Gallery</h1>
+
+  <div class="gallery">
+    <div class="art-item" onclick="openModal('artwork/pinkdream.png', 'Pink Dream')">
+      <img src="artwork/pinkdream.png" alt="Art 1">
+    </div>
+    <div class="art-item" onclick="openModal('artwork/messengers.png', 'Messengers')">
+      <img src="artwork/messengers.png" alt="Art 2">
+    </div>
+    <div class="art-item" onclick="openModal('artwork/bus.png', 'At the Bus Stop')">
+      <img src="artwork/bus.png" alt="Art 3">
+    </div>
+    <div class="art-item" onclick="openModal('artwork/new year.png', 'New Years')">
+      <img src="artwork/new year.png" alt="Art 4">
+    </div>
+    <div class="art-item" onclick="openModal('artwork/accident.png', 'Neon Lights')">
+      <img src="artwork/accident.png" alt="Art 5">
+    </div>
+    <div class="art-item" onclick="openModal('artwork/practice1.png', 'Practice 1')">
+      <img src="artwork/practice1.png" alt="Art 6">
+    </div>
+    <div class="art-item" onclick="openModal('artwork/practice3.png', 'Practice 2')">
+      <img src="artwork/practice3.png" alt="Art 7">
+    </div>
+    <div class="art-item" onclick="openModal('artwork/practic2.png', 'Practice 3')">
+      <img src="artwork/practic2.png" alt="Art 8">
+    </div>
+    <div class="art-item" onclick="openModal('artwork/practice4.png', 'Practice 4')">
+      <img src="artwork/practice4.png" alt="Art 9">
+    </div>
+  </div>
+
+  <!-- Popup Modal -->
+  <div id="modal" class="modal" onclick="closeModal(event)">
+    <div class="modal-content">
+      <img id="modal-img" src="" alt="">
+      <div class="modal-desc">
+        <p id="modal-text"></p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function openModal(imageSrc, description) {
+      document.getElementById('modal-img').src = imageSrc;
+      document.getElementById('modal-text').textContent = description;
+      document.getElementById('modal').style.display = 'flex';
+    }
+    function closeModal(event) {
+      if (event.target.classList.contains('modal')) {
+        document.getElementById('modal').style.display = 'none';
+      }
+    }
+  </script>
+
+</body>
+</html>

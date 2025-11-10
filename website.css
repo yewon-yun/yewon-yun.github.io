@@ -401,7 +401,7 @@ button { font: inherit; }
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #cb7663, #d7c8be);
+  background: linear-gradient(135deg, #464564, #d7c8be);
   color: white;
   text-align: center;
   padding: 60px 20px;

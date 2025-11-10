@@ -1,5 +1,6 @@
 
 html, body { height: 100%; margin: 0; }
+
 .bg {
   position: relative;
   height: 94vh;
@@ -250,7 +251,7 @@ button { font: inherit; }
 }
 
 .coding {
-  min-height: 60vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -271,7 +272,7 @@ button { font: inherit; }
   margin-bottom: 40px;
 }
 
-.about-buttons {
+.code-buttons {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -279,9 +280,9 @@ button { font: inherit; }
 }
 
 /* Square image buttons */
-.about-buttons button {
-  width: 120px;
-  height: 120px;
+.code-buttons button {
+  width: 200px;
+  height: 200px;
   border: none;
   border-radius: 3px;
   background-color: white;
@@ -291,7 +292,14 @@ button { font: inherit; }
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.about-buttons button:hover {
+.code-buttons button img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 3px;
+}
+
+.code-buttons button:hover {
   transform: scale(1.1);
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }

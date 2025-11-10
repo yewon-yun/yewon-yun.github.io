@@ -4,6 +4,7 @@ html, body { height: 100%; margin: 0; }
 html { scroll-behavior: smooth; }
 
 
+
 .bg {
   position: relative;
   height: 94vh;
@@ -174,6 +175,26 @@ button { font: inherit; }
 
 }
 
+.gallery a {
+  display: block;
+  padding: 0;
+  margin: 0;
+  border: none;
+  text-decoration: none;
+  line-height: 0;
+}
+
+.gallery a .gal {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.gallery {
+  grid-auto-rows: 1fr;
+  align-items: stretch;
+}
+
 .gallery {
   display: grid;
   background-color: rgb(10, 66, 69);
@@ -262,6 +283,83 @@ button { font: inherit; }
   transform : scale(1.13);
 }
 
+.art-hero {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f4e4db, #e9b8d0);
+  color: #4a2f28;
+  font-family: 'Playfair Display', serif;
+  overflow: hidden;
+}
+
+.art-hero-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 1400px;
+  gap: 3rem;
+}
+
+/* LEFT SIDE — TEXT */
+.art-text {
+  flex: 1;
+  max-width: 500px;
+}
+
+.art-text h2 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.art-text p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.art-images {
+  flex: 1.4;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.art-images img {
+  width: 100%;
+  height: 45vh;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.art-images img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 900px) {
+  .art-hero-inner {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .art-images img {
+    height: 35vh;
+  }
+
+  .art-text h2 {
+    font-size: 3rem;
+  }
+}
+
+
 .coding {
   min-height: 100vh;
   display: flex;
@@ -291,7 +389,6 @@ button { font: inherit; }
   gap: 50px;
 }
 
-/* Square image buttons */
 .code-buttons button {
   width: 200px;
   height: 200px;
@@ -315,3 +412,5 @@ button { font: inherit; }
   transform: scale(1.1);
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
+
+

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photography Gallery</title>
+  <link rel="stylesheet" href="photography.css">
+</head>
+<body>
+
+<a href="website.html" class="backbutton">← Back</a>
+
+
+<section id="photography" class="photo-section">
+  <h2 class="photo-title">Photography</h2>
+
+  <div class="photo-masonry">
+    <a class="brick" href="#" data-full="photo/boat.jpg" data-caption="Caption 1">
+      <img src="photo/boat.jpg" alt="Photo 1" loading="lazy">
+    </a>
+    <a class="brick" href="#" data-full="photo/west.jpg" data-caption="Caption 2">
+      <img src="photo/west.jpg" alt="Photo 2" loading="lazy">
+    </a>
+    <a class="brick" href="#" data-full="photo/camera.jpg" data-caption="Caption 3">
+      <img src="photo/camera.jpg" alt="Photo 3" loading="lazy">
+    </a>
+    <a class="brick" href="#" data-full="photo/stairs.jpg" data-caption="Caption 4">
+      <img src="photo/stairs.jpg" alt="Photo 4" loading="lazy">
+    </a>
+    <a class="brick" href="#" data-full="photo/super88.jpg" data-caption="Caption 6">
+      <img src="photo/super88.jpg" alt="Photo 6" loading="lazy">
+    </a>
+    <a class="brick" href="#" data-full="photo/snowy.jpg" data-caption="Caption 7">
+      <img src="photo/snowy.jpg" alt="Photo 7" loading="lazy">
+    </a>
+    <a class="brick" href="#" data-full="photo/lighthouse.jpg" data-caption="Caption 8">
+      <img src="photo/lighthouse.jpg" alt="Photo 8" loading="lazy">
+    </a>
+    <a class="brick" href="#" data-full="photo/truck.jpg" data-caption="Caption 9">
+      <img src="photo/truck.jpg" alt="Photo 9" loading="lazy">
+    </a>
+    <a class="brick" href="#" data-full="photo/anne1.JPG" data-caption="Caption 10">
+      <img src="photo/anne1.JPG" alt="Photo 10" loading="lazy">
+    </a>
+    <a class="brick" href="#" data-full="photo/train.jpg" data-caption="Caption 11">
+      <img src="photo/train.jpg" alt="Photo 11" loading="lazy">
+    </a>
+    <a class="brick" href="#" data-full="photo/goat.jpg" data-caption="Caption 12">
+      <img src="photo/goat.jpg" alt="Photo 12" loading="lazy">
+    </a>
+    <a class="brick" href="#" data-full="photo/sea.jpg" data-caption="Caption 13">
+      <img src="photo/sea.jpg" alt="Photo 13" loading="lazy">
+    </a>
+  </div>
+</section>
+
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="lb-close" aria-label="Close">×</button>
+  <button class="lb-arrow lb-prev" aria-label="Previous">❮</button>
+  <figure class="lb-frame">
+    <img id="lb-img" src="" alt="">
+    <figcaption id="lb-cap"></figcaption>
+  </figure>
+  <button class="lb-arrow lb-next" aria-label="Next">❯</button>
+</div>
+
+<script>
+(function(){
+  const bricks = Array.from(document.querySelectorAll('.photo-masonry .brick'));
+  const lb = document.getElementById('lightbox');
+  const lbImg = document.getElementById('lb-img');
+  const lbCap = document.getElementById('lb-cap');
+  const prevBtn = lb.querySelector('.lb-prev');
+  const nextBtn = lb.querySelector('.lb-next');
+  const closeBtn = lb.querySelector('.lb-close');
+  let index = 0;
+
+  function open(i){
+    index = i;
+    const el = bricks[index];
+    lbImg.src = el.dataset.full || el.querySelector('img').src;
+    lbCap.textContent = el.dataset.caption || el.querySelector('img').alt || '';
+    lb.classList.add('open');
+    document.body.classList.add('lb-lock');
+  }
+  function close(){
+    lb.classList.remove('open');
+    document.body.classList.remove('lb-lock');
+    lbImg.src = '';
+  }
+  function next(){
+    index = (index + 1) % bricks.length; open(index);
+  }
+  function prev(){
+    index = (index - 1 + bricks.length) % bricks.length; open(index);
+  }
+
+  bricks.forEach((b, i) => {
+    b.addEventListener('click', e => { e.preventDefault(); open(i); });
+  });
+
+  nextBtn.addEventListener('click', e => { e.stopPropagation(); next(); });
+  prevBtn.addEventListener('click', e => { e.stopPropagation(); prev(); });
+  closeBtn.addEventListener('click', e => { e.stopPropagation(); close(); });
+  lb.addEventListener('click', e => { if(e.target === lb) close(); });
+
+  document.addEventListener('keydown', e => {
+    if(!lb.classList.contains('open')) return;
+    if(e.key === 'Escape') close();
+    if(e.key === 'ArrowRight') next();
+    if(e.key === 'ArrowLeft') prev();
+  });
+})();
+</script>
+
+</body>
+</html>

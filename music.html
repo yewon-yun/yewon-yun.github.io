@@ -39,44 +39,40 @@
       <div class="track-carousel" id="carousel">
         <!-- 10 cards -->
         <button class="track-card active" data-index="0">
-          <img src="music/cover1.jpg" alt="">
-          <span>Track 1</span>
+          <img src="music/cover/waltz.jpg" alt="">
+          <span>Waltz in Air</span>
         </button>
         <button class="track-card" data-index="1">
-          <img src="music/cover2.jpg" alt="">
-          <span>Track 2</span>
+          <img src="music/cover/wave.jpg" alt="">
+          <span>Waves</span>
         </button>
         <button class="track-card" data-index="2">
-          <img src="music/cover3.jpg" alt="">
-          <span>Track 3</span>
+          <img src="music/cover/artist.jpg" alt="">
+          <span>Artist's Theme</span>
         </button>
         <button class="track-card" data-index="3">
-          <img src="music/cover4.jpg" alt="">
-          <span>Track 4</span>
+          <img src="music/cover/marble.jpg" alt="">
+          <span>Marble Ground</span>
         </button>
         <button class="track-card" data-index="4">
-          <img src="music/cover5.jpg" alt="">
-          <span>Track 5</span>
+          <img src="music/cover/two.jpg" alt="">
+          <span>The Two Towers</span>
         </button>
         <button class="track-card" data-index="5">
-          <img src="music/cover6.jpg" alt="">
-          <span>Track 6</span>
+          <img src="music/cover/map.jpg" alt="">
+          <span>Exploration of Map</span>
         </button>
         <button class="track-card" data-index="6">
-          <img src="music/cover7.jpg" alt="">
-          <span>Track 7</span>
+          <img src="music/cover/req.jpg" alt="">
+          <span>A Requiem for Adventure</span>
         </button>
         <button class="track-card" data-index="7">
-          <img src="music/cover8.jpg" alt="">
-          <span>Track 8</span>
+          <img src="music/cover/game.jpg" alt="">
+          <span>Game for Two</span>
         </button>
         <button class="track-card" data-index="8">
-          <img src="music/cover9.jpg" alt="">
-          <span>Track 9</span>
-        </button>
-        <button class="track-card" data-index="9">
-          <img src="music/cover10.jpg" alt="">
-          <span>Track 10</span>
+          <img src="music/cover/loss.jpg" alt="">
+          <span>Loss</span>
         </button>
       </div>
 
@@ -86,16 +82,15 @@
 
   <script>
     const tracks = [
-      { title: "Waltz in Air", artist: "Artist", duration: "3:20", cover: "photo/vinyl.png", src: "music/Waltz in Air.mp3" },
-      { title: "Artist's Theme", artist: "Artist", duration: "2:54", cover: "music/cover2.jpg", src: "music/Artist's Theme.m4a" },
-      { title: "Game for Two", artist: "Artist", duration: "3:05", cover: "music/cover3.jpg", src: "music/Game for two.m4a" },
-      { title: "Marble Ground", artist: "Artist", duration: "3:42", cover: "music/cover4.jpg", src: "music/Marble Ground.mp3" },
-      { title: "The Two Towers", artist: "Artist", duration: "2:58", cover: "music/cover5.jpg", src: "music/The Two Towers.wav" },
-      { title: "Exploration of Map", artist: "Artist", duration: "3:18", cover: "music/cover6.jpg", src: "music/exploration of map.m4a" },
-      { title: "A Requiem for Adventure", artist: "Artist", duration: "3:07", cover: "music/cover7.jpg", src: "music/A Requiem for Adventure.mp3" },
-      { title: "Track 8", artist: "Artist", duration: "3:33", cover: "music/cover8.jpg", src: "music/" },
-      { title: "Track 9", artist: "Artist", duration: "3:11", cover: "music/cover9.jpg", src: "music/" },
-      { title: "Track 10", artist: "Artist", duration: "3:26", cover: "music/cover10.jpg", src: "music/" }
+      { title: "Waltz in Air", artist: "2018", duration: "2:53", cover: "music/cover/waltz.jpg", src: "music/Waltz in Air.mp3" },
+      { title: "Waves", artist: "2024", duration: "4:20", cover: "music/cover/wave.jpg", src: "music/waves.m4a", start: 9},
+      { title: "Artist's Theme", artist: "2023", duration: "1:19", cover: "music/cover/artist.jpg", src: "music/Artist's Theme.m4a" },
+      { title: "Marble Ground", artist: "2022", duration: "6:36", cover: "music/cover/marble.jpg", src: "music/Marble Ground.mp3" },
+      { title: "The Two Towers", artist: "2021", duration: "1:44", cover: "music/cover/two.jpg", src: "music/The Two Towers.wav" },
+      { title: "Exploration of Map", artist: "2023", duration: "2:50", cover: "music/cover/map.jpg", src: "music/exploration of map.m4a" },
+      { title: "A Requiem for Adventure", artist: "2020", duration: "3:14", cover: "music/cover/req.jpg", src: "music/A Requiem for Adventure.mp3" },
+      { title: "Game for Two", artist: "2023", duration: "2:02", cover: "music/cover/game.jpg", src: "music/Game for two.m4a" },
+      { title: "Loss", artist: "2022", duration: "2:40", cover: "music/cover/loss.jpg", src: "music/loss.m4a" }
     ];
 
     const audio = document.getElementById("audio");

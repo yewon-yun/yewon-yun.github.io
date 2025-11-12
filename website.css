@@ -118,6 +118,10 @@ html { scroll-behavior: smooth; }
   margin-bottom: 2rem;
 }
 
+.link {
+  color: #6e4b43;
+}
+
 .about-text .buttons {
   display: flex;
   gap: 1rem;

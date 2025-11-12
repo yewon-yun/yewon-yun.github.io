@@ -453,4 +453,35 @@ button { font: inherit; }
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
+.flap img{
+  min-height: 18vh;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  transition: transform 0.2s ease;
+  margin-top: 15px;
 
+}
+
+.flap img:hover{
+  transform: scale(1.1);
+  }
+
+.ai img{
+  width: 290px;
+  transition: transform 0.2s ease;
+  display: flex;
+  margin-top: 60px;
+}
+.ai img:hover{
+  transform: scale(1.1);
+}
+
+.lit img{
+  width: 200px;
+  transition: transform 0.2s ease;
+  display: flex;
+  margin-top: 30px;
+}
+.lit img:hover{
+  transform: scale(1.1);
+}

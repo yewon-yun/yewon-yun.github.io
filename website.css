@@ -485,3 +485,14 @@ button { font: inherit; }
 .lit img:hover{
   transform: scale(1.1);
 }
+
+.web img{
+  width: 320px;
+  transition: transform 0.2s ease;
+  display: flex;
+  margin-top: 20px;
+}
+.web img:hover{
+  transform: scale(1.1);
+}
+

@@ -118,8 +118,13 @@ html { scroll-behavior: smooth; }
   margin-bottom: 2rem;
 }
 
-.link {
-  color: #6e4b43;
+.link img{
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  position: relative; 
+  margin-top: 15px;
+  margin-right: 7px;
 }
 
 .about-text .buttons {
@@ -132,7 +137,7 @@ html { scroll-behavior: smooth; }
   border: 1px solid #a8827a;
   border-radius: 5px;
   color: #4a2f28;
-  padding: 0.8rem 1.6rem;
+  padding: 0.8rem 5rem;
   font-family: inherit;
   cursor: pointer;
   transition: background 0.2s ease;

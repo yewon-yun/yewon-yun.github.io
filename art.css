@@ -23,6 +23,10 @@ body {
   border-radius: 5px;
 }
 
+.backbutton:hover {
+  background-color: #dfe7f2;
+}
+
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));

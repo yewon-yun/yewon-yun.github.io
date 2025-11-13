@@ -27,6 +27,10 @@ body {
   border-radius: 5px;
 }
 
+.backbutton:hover {
+  background-color: #daa79b;
+}
+
 .check{
   font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;;
   color: #ae5c4a;

@@ -32,6 +32,10 @@ body {
   border-radius: 8px;
 }
 
+.back-btn:hover {
+  background-color: #739794;
+}
+
 .title {
   margin: 0;
   font-size: clamp(1.5rem, 2.5vw, 2rem);

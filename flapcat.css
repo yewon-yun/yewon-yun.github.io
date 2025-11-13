@@ -1,0 +1,108 @@
+:root {
+  --bg: #ffffff;
+  --text: #000000;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  overflow: hidden;
+}
+.back{
+  display: inline-block;
+  margin: 40px 0 20px 40px;
+  font-family: "Inter", serif;
+  color: black;
+  text-decoration: none;
+  font-weight: 100;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  
+}
+
+.back:hover {
+  background: rgba(0,0,0,0.06);
+}
+
+
+.header {
+  margin-top: 2.5rem;
+  position: relative;
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.title {
+  margin: 0;
+  font-family: "Inter", serif;
+  font-weight: 600;
+  font-size: clamp(3.5rem, 3vw, 2.4rem);
+  letter-spacing: 0.04em;
+}
+
+.main {
+  margin-top: 15px;
+  height: calc(100% - 64px);
+  display: flex;
+  justify-content: center;
+  padding: 0 16px 24px;
+}
+
+.content {
+  text-align: center;
+  max-width: 720px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
+.description {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.video-wrap {
+  width: 100%;
+  max-width: 640px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.github {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 22px;
+  border-radius: 999px;
+  border: 1px solid #000000;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text);
+  background: transparent;
+  transition: background-color 140ms ease, color 140ms ease, transform 120ms ease;
+}
+
+.github:hover {
+  background: #000000;
+  color: #ffffff;
+  transform: translateY(-1px);
+}

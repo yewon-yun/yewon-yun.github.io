@@ -13,6 +13,10 @@
   border-radius: 5px;
 }
 
+.backbutton:hover {
+  background-color: #102c2c;
+}
+
 body {
   background: #0f1112;
   color: #f5f6f7;

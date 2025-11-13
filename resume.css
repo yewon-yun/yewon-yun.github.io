@@ -155,6 +155,7 @@ body {
   margin-top: 10px;
   margin-right: 10px;
   transition: all 1s;
+  cursor: pointer;
 }
 
 .sc:hover{

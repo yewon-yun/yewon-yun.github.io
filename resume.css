@@ -162,7 +162,6 @@ body {
   background-color: #dcc0bb;
 }
 
-
 @media (max-width: 720px) {
   .skill-grid {
     grid-template-columns: 1fr;

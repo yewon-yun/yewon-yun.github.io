@@ -118,6 +118,16 @@ html { scroll-behavior: smooth; }
   margin-bottom: 2rem;
 }
 
+.about-text p2{
+  max-width: 500px;
+  line-height: 1.6;
+  font-size: 1.06rem;
+  margin-left: 2rem;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+
+}
+
 .link img{
   width: 30px;
   height: 30px;

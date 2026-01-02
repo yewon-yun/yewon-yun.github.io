@@ -482,6 +482,19 @@ button { font: inherit; }
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
+.orc img{
+  max-height: 20vh;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  transition: transform 0.2s ease;
+  margin-top: 15px;
+
+}
+
+.orc img:hover{
+  transform: scale(1.1);
+  }
+
 .flap img{
   min-height: 18vh;
   image-rendering: pixelated;
@@ -516,7 +529,7 @@ button { font: inherit; }
 }
 
 .web img{
-  width: 320px;
+  width: 280px;
   transition: transform 0.2s ease;
   display: flex;
   margin-top: 20px;

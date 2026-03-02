@@ -2,6 +2,7 @@
 
 Welcome to my personal portfolio website!  
 This project showcases my creative and technical work, including photography, music, artwork, and coding projects.
+(All photography used on this site is my own work!)
 
 🔗 Live site: https://yewon-yun.github.io
 
